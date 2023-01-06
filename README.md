@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on SYSCO LABS as a Senior Quality Engineer.
+- 🔭 I’m currently working at SYSCO LABS as a Senior Quality Engineer.
 - 💬 Ask me about JAVA, Rest Assured, Selenium, Maven, GIT, JavaScript, K6, JMeter
 - 📫 How to reach me: https://www.linkedin.com/in/dameesha-sarathchandra-04ba00a9/
 - 😄 Pronouns: Her/ She
