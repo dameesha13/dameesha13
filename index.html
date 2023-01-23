@@ -1,143 +1,255 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+body {
+  font-family: Comic sans MS;
+  color: grey;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  left: 0;
+  background-color: #aaa;
+  width: 25%;
+
+}
+
+.right {
+  right: 0;
+  background-color: #FFFFFF;
+  width: 75%;
+  border: 2px solid black;
+  border-bottom:0px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 10px 10px;
+  padding: 15px;
+}
+
+.centered img {
+  width: 180px;
+  border-radius: 50%;
+
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #FFFFFF;
+  width: 20%;
+  height: 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display:block;
+  background-color: inherit;
+  color: black;
+  padding: 29px 180px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Comic sans MS;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 30px;
+  width: 100%;
+  border-left: none;
+  height: 300px;
+}
+
+
 </style>
-<body class="w3-light-grey">
+</head>
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <a href="https://lh3.googleusercontent.com/HZUQoU91B8a1RZ9SlhRW4BkoYGa1YrN7yUrpgbuPOzy_GLUYqDdHdpiNDHm_ZUBkcDhUOzMm3PnvCOMmi-iITKCfM74DfBTpwPYEgpctTw2uAE8gQkLn6_LPCxtojoNqYo9LGGqCjg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/HZUQoU91B8a1RZ9SlhRW4BkoYGa1YrN7yUrpgbuPOzy_GLUYqDdHdpiNDHm_ZUBkcDhUOzMm3PnvCOMmi-iITKCfM74DfBTpwPYEgpctTw2uAE8gQkLn6_LPCxtojoNqYo9LGGqCjg=w548-h315-p-k" style="width:100%" /> </a>
-                    <div class="w3-display-bottomleft w3-container w3-text-black">
-                        <h2 style="color:white;">Dameesha Sarathchandra</h2>
-                    </div>
-                </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Senior Software Quality Engineer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kalutara, Sri Lanka</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>dameeshanemini@gmail.com</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+94710539357</p>
-                    <hr>
-
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                    <p>Automation software and testing</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                    </div>
-                    <p>Project Management</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                    </div>
-                    <p>Attention to detail</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                    </div>
-                    <p>Leadership</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                    </div>
-                    <p>Problem solving skill</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                    </div>
-                    <br>
-
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                    <p>English</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                    </div>
-                    <p>Sinhala</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                    </div>
-                    <br>
-                </div>
-            </div><br>
-            <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird" >
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Senior Quality Engineer / Sysco LABS</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2022 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                    <ul><li>Increasing service level automation coverage using Rest Assured and improving the test execution time</li> <li>performing integration, functional, and regression testing while creating regression tests in Java using Rest Assured</li> <li>Developing, and implementing performance test scripts in accordance with agreed strategies using K6 and JavaScript</li>
-                        <li>Estimating, prioritizing, planning, and coordinating quality activities</li> <li>Documenting software defects, using a bug tracking system and reporting defects to developers</li> <li>Designing test plans and scripts</li> <li>Handling deployments, Analyse Jenkins failures through debugging procedures by reviewing logs. </li></ul>
-                    <p>Technologies used: Java, Rest Assured, Selenium, JavaScript, Nodejs, Python, Postman, Datadog, GraphQL, PostgreSQL, TestNG, Linux, JIRA, GIT, Jenkins, Swagger, Confluence, SonarQube, AWS
-                    </p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Senior Software Quality Engineer / Pearson</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 - June 2022</h6>
-                    <ul><li>Automated GUI test cases using selenium, Falcon, eSelenium with Java </li>
-                        <li>Increased service level automation coverage using Rest Assured and improved the test execution time</li>
-                        <li>promoted shift-left process</li> <li>Facilitated early testing within the project and reduced defect leakage</li> <li>Designed test plans and scripts</li> <li>Estimated, prioritized, planned and coordinated quality testing activities</li> <li>Document software defects using a bug tracking system</li> <li>Conducted software compatibility tests with browsers vs operating systems</li> <li>Prepared release level QE documents (QMP, RRR, TSR)</li> <li>Led a team of 4 members that restructured & rewrote regression test cases</li> <li>Estimated/assigned sprint tasks, review team members work </li> <li>Developed testing programs that address areas such as scenarios, regression/perf/ negative testing, error/bug retests</li> <li>Participated in product design reviews to provide inputs on functional requirements, product designs, schedules or potential problems.</li></ul>
-                    <p>Technologies Used: Java, Rest Assured, e-Selenium, Falcon, Postman, MongoDB, HP ALM, Grafana, JMeter, JIRA, Maven, TestNG, NVDA, GIT, Bitbucket, Jenkins, Swagger, Confluence, SonarQube, BrowserStack, SauceLabs
-                    </p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer (JAVA) / Virtusa</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2015 - Dec 2019</h6>
-                    <p>CSGI - MTN </p>
-                    <p>This project-based on the telecommunication domain and gives various services to MTN by implementing systems. Responsible for back-end and front-end code implementation, debugging to find the root cause and resolving bugs in production, redesigned the existing features, made deployments via WebLogic, provided technical support for QE engineers for their automation, and wrote unit test cases. Assisted in coaching junior staff, and interviewed new resources. </p>
-                    <p>Technologies Used: Java, Spring, Hibernate, JDBC Template, SOAP web services, JSP, jQuery, Maven, Oracle SQL, Oracle WebLogic server, JaCoCo, IBM RTC </p>
-
-                    <p>WSO2 Middleware</p>
-                    <p>Troubleshoot the problem and gave high-quality code changes to resolve the bugs in production. Also made the deployment of service releases, patches, and customizations. </p>
-                    <p>Technologies Used: Java, WSO2 API manager, WSO2 Identity server, Linux
-                    </p><br>
-                </div>
+<div class="split left">
+    <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+                <a href="https://lh3.googleusercontent.com/HZUQoU91B8a1RZ9SlhRW4BkoYGa1YrN7yUrpgbuPOzy_GLUYqDdHdpiNDHm_ZUBkcDhUOzMm3PnvCOMmi-iITKCfM74DfBTpwPYEgpctTw2uAE8gQkLn6_LPCxtojoNqYo9LGGqCjg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/HZUQoU91B8a1RZ9SlhRW4BkoYGa1YrN7yUrpgbuPOzy_GLUYqDdHdpiNDHm_ZUBkcDhUOzMm3PnvCOMmi-iITKCfM74DfBTpwPYEgpctTw2uAE8gQkLn6_LPCxtojoNqYo9LGGqCjg=w548-h315-p-k" style="width:100%" /> </a>
             </div>
-
-            <div class="w3-container w3-card w3-white">
-                <div class="w3-container w3-card w3-white w3-margin-bottom" >
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Sri Lanka Institute of Information Technology</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2022</h6>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MSc in Information Systems </h6>
-                        <p>Master Degree</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Sri Lanka Institute of Information Technology</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2015</h6>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>BSc (Hons) in Information Technology specializing in Software Engineering </h6>
-                        <p>Bachelor Degree</p>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certification</h2>
-                    <div class="w3-container">
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Certified Tester Foundation Level (CTFL) </h6>
-                        <hr>
-                    </div>
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
         </div>
-
-        <!-- End Page Container -->
-    </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openData(event, 'About')" id="defaultOpen">Personal Profile</button>
+            <button class="tablinks" onclick="openData(event, 'Experience')">Experience</button>
+            <button class="tablinks" onclick="openData(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openData(event, 'Certification')">Certification</button>
+            <button class="tablinks" onclick="openData(event, 'Skills')">Skills</button>
+            <button class="tablinks" onclick="openData(event, 'Languages')">Languages</button>
+        </div>
 </div>
+</div>
+
+<div class="split right">
+    <div id="About" class="tabcontent">
+        <div class="w3-container">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
+            <div style="text-align:left;" class="w3-display-bottomleft w3-container w3-text-black" >
+                <p style=font-size:25px;"><b>Dameesha Sarathchandra</b></p>
+            </div>
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Senior Software Quality Engineer</p>
+            <p style="text-align:left;"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kalutara, Sri Lanka</p>
+            <p style="text-align:left;"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>dameeshanemini@gmail.com</p>
+            <p style="text-align:left;"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+94710539357</p>
+            <p style="text-align:left;"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>https://www.linkedin.com/in/dameesha-sarathchandra/</p>
+            <p style="text-align:left;"><i class="fa fa-skype fa-fw w3-margin-right w3-large w3-text-teal"></i>live:.cid.6b308552d1869371</p>
+        </div>
+    </div>
+
+    <div id="Experience" class="tabcontent">
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+            <div class="w3-container">
+                <h5 style=font-size:18px;" class="w3-opacity"><b>Senior Quality Engineer / Sysco LABS</b></h5>
+                <h6 style=font-size:14px;" class="w3-text-teal"><i class="fa fa-fw w3-margin-right"></i>June 2022 - Present</span></h6>
+                <ul><li>Increasing service level automation coverage using Rest Assured and improving the test execution time</li> <li>performing integration, functional, and regression testing while creating regression tests in Java using Rest Assured</li> <li>Developing, and implementing performance test scripts in accordance with agreed strategies using K6 and JavaScript</li>
+                    <li>Estimating, prioritizing, planning, and coordinating quality activities</li> <li>Documenting software defects, using a bug tracking system and reporting defects to developers</li> <li>Designing test plans and scripts</li> <li>Handling deployments, Analyse Jenkins failures through debugging procedures by reviewing logs. </li></ul>
+                <p style="font-style: italic;font-size:14px">Technologies used: Java, Rest Assured, Selenium, JavaScript, Nodejs, Python, Postman, Datadog, GraphQL, PostgreSQL, TestNG, Linux, JIRA, GIT, Jenkins, Swagger, Confluence, SonarQube, AWS
+                </p>
+            </div>
+            <div class="w3-container">
+                <h5 style=font-size:18px;" class="w3-opacity"><b>Senior Software Quality Engineer / Pearson</b></h5>
+                <h6 style=font-size:14px;" class="w3-text-teal"><i class="fa fa-fw w3-margin-right"></i>Dec 2019 - June 2022</h6>
+                <ul><li>Automated GUI test cases using selenium, Falcon, eSelenium with Java </li>
+                    <li>Increased service level automation coverage using Rest Assured and improved the test execution time</li>
+                    <li>promoted shift-left process</li> <li>Facilitated early testing within the project and reduced defect leakage</li> <li>Designed test plans and scripts</li> <li>Estimated, prioritized, planned and coordinated quality testing activities</li> <li>Document software defects using a bug tracking system</li> <li>Conducted software compatibility tests with browsers vs operating systems</li> <li>Prepared release level QE documents (QMP, RRR, TSR)</li> <li>Led a team of 4 members that restructured & rewrote regression test cases</li> <li>Estimated/assigned sprint tasks, review team members work </li> <li>Developed testing programs that address areas such as scenarios, regression/perf/ negative/integration testing, error/bug retests</li> <li>Participated in product design reviews to provide inputs on functional requirements, product designs, schedules or potential problems</li><li>Coordinated partner testing with internal teams</li>
+                        <li>Involved in product introductions and demos for PO and team</li>
+                        <li>Collaborated with an overseas Product manager, Engineering Director, UI/UX engineers, and performance teammates</li><li>Guided junior team members and helped them with knowledge sharing and ramping up</li>
+                        <li>Interviewed new resources</li></ul>
+                <p style="font-style: italic;font-size:14px">Technologies Used: Java, Rest Assured, e-Selenium, Falcon, Postman, MongoDB, HP ALM, Grafana, JMeter, JIRA, Maven, TestNG, NVDA, GIT, Bitbucket, Jenkins, Swagger, Confluence, SonarQube, BrowserStack, SauceLabs
+                </p>
+            </div>
+            <div class="w3-container">
+                <h5 style=font-size:18px;" class="w3-opacity"><b>Software Engineer (JAVA) / Virtusa</b></h5>
+                <h6 style=font-size:14px;" class="w3-text-teal"><i class="fa fa-fw w3-margin-right"></i>Dec 2015 - Dec 2019</h6>
+                <p>CSGI - MTN </p>
+                <ul><li>This project-based on the telecommunication domain and gives various services to MTN by implementing systems</li> <li>Responsible for back-end and front-end code implementation</li> <li>Debugging to find the root cause and resolving bugs in production</li> <li>Redesigned the existing features</li> <li>Made deployments via WebLogic</li> <li>Provided technical support for QE engineers for their automation</li> <li>wrote unit test cases</li> <li>Assisted in coaching junior staff</li> <li>Interviewed new resources</li> </ul>
+                <p style="font-style: italic;font-size:14px">Technologies Used: Java, Spring, Hibernate, JDBC Template, SOAP web services, JSP, jQuery, Maven, Oracle SQL, Oracle WebLogic server, JaCoCo, IBM RTC </p>
+
+                <p>WSO2 Middleware</p>
+                <ul><li>Troubleshoot the problem and gave high-quality code changes to resolve the bugs in production</li> <li>Made the deployment of service releases, patches, and customizations</li></ul>
+                <p style="font-style: italic;font-size:14px">Technologies Used: Java, WSO2 API manager, WSO2 Identity server, Linux
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Education" class="tabcontent">
+        <div class="w3-container w3-card w3-white w3-margin-bottom" >
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span style="font-size:30px;">Education</span></h2>
+            <div class="w3-container">
+                <p style="font-size:18px;" class="w3-text-teal"><b>MSc in Information Systems</b></p>
+                <p style="font-size:18px;" class="w3-text-teal">Sri Lanka Institute of Information Technology</p>
+                <p style="font-size:18px;" class="w3-text-teal">2020 - 2022</p>
+            </div>
+            <br>
+            <div class="w3-container">
+                <p style="font-size:18px;" class="w3-text-teal"><b>BSc (Hons) in Information Technology specializing in Software Engineering</b></p>
+                <p style="font-size:18px;" class="w3-text-teal">Sri Lanka Institute of Information Technology</p>
+                <p style="font-size:18px;" class="w3-text-teal">2012 - 2015</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="Certification" class="tabcontent">
+        <div class="w3-container w3-card w3-white">
+            <h2 style="font-size:30px;" class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certification</h2>
+            <div class="w3-container">
+                <p style=font-size:20px;" class="w3-text-teal"> Certified Tester Foundation Level (CTFL) </p>
+            </div>
+        </div>
+    </div>
+    <div id="Skills" class="tabcontent">
+        <div class="w3-container w3-card w3-white">
+            <h2 style="font-size:30px;" class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills</h2>
+            <p>Automation software and testing</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+            </div>
+            <p>Project Management</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+            </div>
+            <p>Attention to detail</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+            </div>
+            <p>Leadership</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+            </div>
+            <p>Problem solving skill</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+            </div>
+            <br>
+        </div>
+    </div>
+    <div id="Languages" class="tabcontent">
+        <div class="w3-container w3-card w3-white">
+            <h2 style="font-size:30px;" class="w3-text-grey w3-padding-16"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Languages</h2>
+            <p>English</p>
+            <div class="w3-light-grey w3-round-xlarge">
+            </div>
+            <p>Sinhala</p>
+            <div class="w3-light-grey w3-round-xlarge">
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <script>
+function openData(evt, titleName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(titleName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+
 
 </body>
 </html>
